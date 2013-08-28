@@ -12,17 +12,34 @@
  * Body
  */
 
+
+@import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic-ext,cyrillic");
+
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'pt sans', arial, sans-serif;
+    font-size: 16px;
+    line-height: normal;
+}
+
+a {
+    color: #089b17;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+li a {
+    text-decoration: none;
 }
 
 #page {
 }
 
 /*
- * The skip-link link will be completely hidden until a user tabs to the link.
- * See the element-focusable rule in system.base.css.
+ * the skip-link link will be completely hidden until a user tabs to the link.
+ * see the element-focusable rule in system.base.css.
  */
 
 #skip-link {
@@ -39,29 +56,32 @@ body {
 }
 
 /*
- * Header
+ * header
  */
 
 #header {
+  margin-left: 35px;
 }
 
-#logo { /* Wrapping link for logo */
-  float: left; /* LTR */
+#logo { /* wrapping link for logo */
+  float: left; /* ltr */
   margin: 0;
-  padding: 0;
 }
 #logo img {
   vertical-align: bottom;
 }
 
-#name-and-slogan { /* Wrapper for website name and slogan */
-  float: left;
+#name-and-slogan { /* wrapper for website name and slogan */
+    padding-right: 10%;
+    text-align: center;
 }
 
-#site-name { /* The name of the website */
-  margin: 0;
-  font-size: 2em;
-  line-height: 1.5em;
+#site-name { /* the name of the website */
+    font-size: 32px;
+    line-height: 30px;
+    font-weight: normal !important;
+    margin: 0;
+    margin-top: 30px;
 }
 #site-name a:link,
 #site-name a:visited {
@@ -73,33 +93,39 @@ body {
   text-decoration: underline;
 }
 
-#site-slogan { /* The slogan (or tagline) of a website */
-  margin: 0;
-  font-size: 1em;
+#site-slogan { /* the slogan (or tagline) of a website */
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px;
+    font-weight: normal !important;
 }
 
-.region-header { /* Wrapper for any blocks placed in the header region */
-  clear: both; /* Clear the logo */
+.region-header { /* wrapper for any blocks placed in the header region */
+  clear: both; /* clear the logo */
 }
+
+
 
 /*
- * Main (container for everything else)
+ * main (container for everything else)
  */
 
 #main {
 }
 
 /*
- * Content
+ * content
  */
 
 #content {
 }
 
+
+
 .region-highlighted {
 }
 
-.breadcrumb { /* The path to the current page in the form of a list of links */
+.breadcrumb { /* the path to the current page in the form of a list of links */
 }
 .breadcrumb ol {
   margin: 0;
@@ -112,104 +138,118 @@ body {
   padding: 0;
 }
 
-h1.title, /* The title of the page */
-h2.node-title, /* Title of a piece of content when it is given in a list of content */
-h2.block-title, /* Block title */
-h2.title, /* Comment section heading */
-h2.comment-form, /* Comment form heading */
-h3.title { /* Comment title */
+h1.title, /* the title of the page */
+h2.node-title, /* title of a piece of content when it is given in a list of content */
+h2.block-title, /* block title */
+h2.title, /* comment section heading */
+h2.comment-form, /* comment form heading */
+h3.title { /* comment title */
   margin: 0;
 }
 
-tr.even { /* Some tables have rows marked even or odd. */
-  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+#content ul{
+    margin: 0;
+    padding: 0;
+}
+
+h2, h4{  /* dirty hack: instead of changing it in html */
+    font-weight: normal;
+    font-size: 21px;
+    margin-bottom: 10px;
+    color: #999;
+}
+
+tr.even { /* some tables have rows marked even or odd. */
+  /* background-color: #eee; */ /* drupal core uses a #eee background */
 }
 
 tr.odd {
-  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+  /* background-color: #eee; */ /* drupal core uses a #eee background */
 }
 
-div.messages { /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */
-  margin: 1.5em 0; /* Drupal core uses "6px 0" margin */
+div.messages { /* important messages (status, warning, and error) for the user. see also the declarations in messages.css. */
+  margin: 1.5em 0; /* drupal core uses "6px 0" margin */
 }
 div.messages ul {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-div.status { /* Normal priority messages */
+div.status { /* normal priority messages */
 }
 
 div.warning,
-tr.warning { /* Medium priority messages */
-  /* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
+tr.warning { /* medium priority messages */
+  /* border: 1px solid #f0c020; */ /* drupal core uses: 1px solid #f0c020 */
 }
 
 div.error,
-tr.error { /* High priority messages. See also the .error declaration below. */
+tr.error { /* high priority messages. see also the .error declaration below. */
 }
 
-.error { /* Errors that are separate from div.messages status messages. */
-  /* color: #e55; */ /* Drupal core uses a #e55 background */
+.error { /* errors that are separate from div.messages status messages. */
+  /* color: #e55; */ /* drupal core uses a #e55 background */
 }
 
-.warning { /* Warnings that are separate from div.messages status messages. */
-  /* color: #e09010; */ /* Drupal core uses a #e09010 background */
+.warning { /* warnings that are separate from div.messages status messages. */
+  /* color: #e09010; */ /* drupal core uses a #e09010 background */
 }
 
-.tabs { /* See also the tabs.css file. */
+.tabs { /* see also the tabs.css file. */
 }
 
-.region-help { /* Help text on a page */
+.region-help { /* help text on a page */
+    display: none;
 }
 
-.more-help-link { /* Link to more help */
+.more-help-link { /* link to more help */
 }
 
-.region-content { /* Wrapper for the actual page content */
+.region-content { /* wrapper for the actual page content */
 }
 
-ul.inline { /* List of links generated by theme_links() */
+ul.inline { /* list of links generated by theme_links() */
   display: inline;
   padding: 0;
 }
 ul.inline li {
   display: inline;
   list-style-type: none;
-  padding: 0 1em 0 0; /* LTR */
+  padding: 0 1em 0 0; /* ltr */
 }
 
-span.field-label { /* The inline field label used by the Fences module */
-  padding: 0 1em 0 0; /* LTR */
+span.field-label { /* the inline field label used by the fences module */
+  padding: 0 1em 0 0; /* ltr */
 }
 
-.item-list .pager { /* A list of page numbers when more than 1 page of content is available */
+.item-list .pager { /* a list of page numbers when more than 1 page of content is available */
   padding: 0;
 }
-.item-list .pager li { /* Each page number in the pager list */
+.item-list .pager li { /* each page number in the pager list */
   padding: 0 0.5em;
 }
 
-.feed-icon { /* The link to the RSS or Atom feed for the current list of content */
+.feed-icon { /* the link to the rss or atom feed for the current list of content */
 }
 
-.more-link { /* Aggregator, blog, and forum more link */
+.more-link { /* aggregator, blog, and forum more link */
 }
 
 /*
- * First sidebar (on left in LTR languages, on right in RTL)
+ * first sidebar (on left in ltr languages, on right in rtl)
  *
- * Remember to NOT add padding or margin to your .region-sidebar-first
+ * remember to not add padding or margin to your .region-sidebar-first
  * (see the layout.css file.)
  */
 
-.region-sidebar-first {
+.region-sidebar-first .view-content {
+    font-size: 13px;
 }
 
 /*
- * Second sidebar (on right in LTR languages, on left in RTL)
+ * second sidebar (on right in ltr languages, on left in rtl)
  *
- * Remember to NOT add padding or margin to your .region-sidebar-second
+ * remember to not add padding or margin to your .region-sidebar-second
  * (see the layout.css file.)
  */
 
@@ -217,15 +257,34 @@ span.field-label { /* The inline field label used by the Fences module */
 }
 
 /*
- * Footer
+ * footer
  */
 
 #footer {
 }
 
 /*
- * Page bottom
+ * page bottom
  */
 
-.region-bottom { /* Wrapper for any blocks placed in the page bottom region */
+.region-bottom { /* wrapper for any blocks placed in the page bottom region */
+}
+
+.service-links--ru-yandex{
+    display:none;
+}
+.service-links-reddit{
+    display:none;
+}
+.service-links-linkedin-share-button{
+    display:none;
+}
+.service-links--ru-moimir{
+    display:none;
+}
+.service-links--ru-odnoklassniki{
+    display:none;
+}
+.service-links--ru-yaru {
+    display:none;
 }

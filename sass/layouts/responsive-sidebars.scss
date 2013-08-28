@@ -63,6 +63,11 @@ $zen-auto-include-item-base: false;
   @include zen-grid-item-base();
 }
 
+#content{
+  background-color: gray;
+}
+
+
 /*
  * Containers for grid items and flow items.
  */
