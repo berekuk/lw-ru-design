@@ -19,13 +19,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'pt sans', arial, sans-serif;
-    font-size: 16px;
+    font-size: 1.2em;
     line-height: normal;
 }
 
-a {
-    color: #089b17;
-}
 a:hover {
     text-decoration: underline;
 }
@@ -77,8 +74,8 @@ li a {
 }
 
 #site-name { /* the name of the website */
-    font-size: 32px;
-    line-height: 30px;
+    font-size: 2.5em;
+	line-height: 2.2em;
     font-weight: normal !important;
     margin: 0;
     margin-top: 30px;
@@ -94,8 +91,8 @@ li a {
 }
 
 #site-slogan { /* the slogan (or tagline) of a website */
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.3em;
+    line-height: 2em;
     margin: 0px;
     font-weight: normal !important;
 }
@@ -150,13 +147,6 @@ h3.title { /* comment title */
 #content ul{
     margin: 0;
     padding: 0;
-}
-
-h2, h4{  /* dirty hack: instead of changing it in html */
-    font-weight: normal;
-    font-size: 21px;
-    margin-bottom: 10px;
-    color: #999;
 }
 
 tr.even { /* some tables have rows marked even or odd. */
@@ -243,7 +233,7 @@ span.field-label { /* the inline field label used by the fences module */
  */
 
 .region-sidebar-first .view-content {
-    font-size: 13px;
+    font-size: 0.8em;
 }
 
 /*
@@ -268,23 +258,4 @@ span.field-label { /* the inline field label used by the fences module */
  */
 
 .region-bottom { /* wrapper for any blocks placed in the page bottom region */
-}
-
-.service-links--ru-yandex{
-    display:none;
-}
-.service-links-reddit{
-    display:none;
-}
-.service-links-linkedin-share-button{
-    display:none;
-}
-.service-links--ru-moimir{
-    display:none;
-}
-.service-links--ru-odnoklassniki{
-    display:none;
-}
-.service-links--ru-yaru {
-    display:none;
 }
