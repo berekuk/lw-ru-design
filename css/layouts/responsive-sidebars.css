@@ -15,7 +15,8 @@
 
 
 
-#page,
+#page > div#main,
+#page > header#header,
 .region-bottom {
   /* For screen sizes larger than 1200px, prevent excessively long lines of text
      by setting a max-width. */

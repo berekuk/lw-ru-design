@@ -166,7 +166,7 @@ h2{
     margin-bottom: 10px;
     color: #999;
 }
-h4{  /* TODO: sequences > h4 */
+div.sequences h4{
     font-weight: normal;
 /*    font-size: 21px;*/
     font-size: 1.3em;
@@ -278,6 +278,27 @@ span.field-label { /* the inline field label used by the fences module */
  */
 
 #footer {
+
+    width: 100%;
+    height: 100px;
+    background-color: #999;
+    border-top: 5px solid #089b17;
+    text-align: center;
+    font-size: 40px;
+    line-height: 90px;
+    color: #333;
+}
+/*div#pages > footer{
+    max-width: none;
+}*/
+
+footer div.block{
+    margin-bottom: 0px;
+}
+
+/* Очень грязный хак! TODO: спросить у Юлия, пказывается ли людям кнопка "настроить" */
+footer div.contextual-links-wrapper{
+    display:none;
 }
 
 /*
