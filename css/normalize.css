@@ -199,7 +199,9 @@ textarea {
 
    */
 
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
 }
+
 /*
  * Addresses margins handled incorrectly in IE6/7
  */
@@ -716,28 +718,17 @@ tbody {
 }
 
 h1#site-name{
-    font-size: 32px;
-    line-height: 30px;
-    margin: 0;
-    margin-top: 30px;
- /*
 text-align: center;
 position: absolute;
 left: 40%;
 top: 10px;
-*/
 }
 
 h2#site-slogan{
-    font-size: 18px;
-    line-height: 24px;
-    margin: 0px;
-/*
-    text-align: center;
+text-align: center;
 position: absolute;
 left: 40.3%;
 top: 43px;
-*/
 }
 
 div#login-register{
@@ -753,4 +744,3 @@ right: 0.75em;
     width: 10%;
     margin: 0px 1%;
     float: left;
-}
