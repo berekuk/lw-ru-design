@@ -16,7 +16,8 @@
 
 
 #page > div#main,
-#page > header#header,
+#page > header#header > a#logo,
+#page > header#header > hgroup,
 .region-bottom {
   /* For screen sizes larger than 1200px, prevent excessively long lines of text
      by setting a max-width. */
@@ -24,6 +25,22 @@
   margin-right: auto;
   max-width: 1080px;
 }
+#page > header#header > a#logo{
+  margin-left: 10%;
+}
+
+#page > header#header > nav{
+    max-width: none;
+    max-width: 100%;
+    float: right;
+}
+/*
+#page > header#header > a,
+#page > header#header > hgroup,
+#page > header#header > nav{
+  max-width: none;
+}
+*/
 
 /*
  * Apply the shared properties of grid items in a single, efficient ruleset.
