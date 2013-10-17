@@ -716,31 +716,3 @@ th {
 tbody {
   border-top: none;
 }
-
-h1#site-name{
-text-align: center;
-position: absolute;
-left: 40%;
-top: 10px;
-}
-
-h2#site-slogan{
-text-align: center;
-position: absolute;
-left: 40.3%;
-top: 43px;
-}
-
-div#login-register{
-/* float: right;
-width: 340px; */
-
-position: absolute;
-top: 0px;
-right: 0.75em;
-}
-
-.book-navigation .page-up {
-    width: 10%;
-    margin: 0px 1%;
-    float: left;
