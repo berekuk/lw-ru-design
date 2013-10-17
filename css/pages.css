@@ -26,10 +26,10 @@ body {
 }
 
 a {
-    color: #089b17;
+   /* color: #089b17;		*/
 }
 a:visited {
-    color: #afaf32; /* Цвет посещенных ссылок */
+ /*   color: #afaf32; Цвет посещенных ссылок  — пока уберём этот поносный цвет... Надо проверить оптимайзером или как его там... */
 }
 
 a:hover {
@@ -84,15 +84,27 @@ li a {
 
 #site-name { /* the name of the website */
     font-size: 2.5em;
-    line-height: 2.2em;
-  /*font-size: 32px;
-    line-height: 30px; */
+    line-height: 0.6em;
+  /*font-size: 32px;  */
+  /*  line-height: 30px; */
     font-weight: normal !important;
     margin: 0;
-    margin-top: 30px;
-
-    top: -45px !important; /* грязный хак, TODO: понять, что делать с normalize.css */
+    margin-top: 0.5em; 
+  /*  top: -45px !important;  грязный хак, TODO: понять, что делать с normalize.css */
 }
+
+#site-slogan { /* the slogan (or tagline) of a website */
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 0.6em;
+   /* font-size: 18px;  */
+   /* line-height: 24px; */
+    margin: 0px;
+    margin-top: 0.5em; 
+    font-weight: normal !important;
+    color: #999;
+}
+
 #site-name a:link,
 #site-name a:visited {
   color: #000;
@@ -103,14 +115,34 @@ li a {
   text-decoration: underline;
 }
 
-#site-slogan { /* the slogan (or tagline) of a website */
-    text-align: center;
-    font-size: 18px;
-    line-height: 24px;
-    margin: 0px;
-    font-weight: normal !important;
+h1#site-name{
+text-align: center;
+position: absolute;
+left: 40%;
+top: 0.1em;
 }
 
+h2#site-slogan{
+text-align: center;
+position: absolute;
+left: 40.3%;
+top: 3em;
+}
+
+div#login-register{
+/* float: right;
+width: 340px; */
+position: absolute;
+top: 0.1em;
+right: 0.75em;
+}
+
+.book-navigation .page-up {
+    width: 10%;
+    margin: 0px 1%;
+    float: left;
+}
+	
 .region-header { /* wrapper for any blocks placed in the header region */
   clear: both; /* clear the logo */
 }
@@ -170,11 +202,10 @@ h2{
     margin-bottom: 10px;
     color: #999;
 }
-div.sequences h4{
+div.main-page-sequence-name-title h4{
     font-weight: normal;
 /*    font-size: 21px;*/
     font-size: 1.3em;
-
     margin-bottom: 10px;
     color: #999;
 }
@@ -283,14 +314,14 @@ span.field-label { /* the inline field label used by the fences module */
 
 #footer {
 
-    width: 100%;
+  /*  width: 100%;
     height: 100px;
     background-color: #999;
     border-top: 5px solid #089b17;
     text-align: center;
     font-size: 40px;
     line-height: 90px;
-    color: #333;
+    color: #333;  АД!!! **/
 }
 /*div#pages > footer{
     max-width: none;
@@ -300,33 +331,9 @@ footer div.block{
     margin-bottom: 0px;
 }
 
-/* Очень грязный хак! TODO: спросить у Юлия, пказывается ли людям кнопка "настроить" */
-footer div.contextual-links-wrapper{
-    display:none;
-}
-
 /*
  * page bottom
  */
 
 .region-bottom { /* wrapper for any blocks placed in the page bottom region */
-}
-
-.service-links--ru-yandex{
-    display:none;
-}
-.service-links-reddit{
-    display:none;
-}
-.service-links-linkedin-share-button{
-    display:none;
-}
-.service-links--ru-moimir{
-    display:none;
-}
-.service-links--ru-odnoklassniki{
-    display:none;
-}
-.service-links--ru-yaru {
-    display:none;
 }
