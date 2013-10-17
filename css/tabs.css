@@ -22,6 +22,7 @@ ul.secondary {
   margin: 1em 0 1.5em;
   padding: 0 2px;
   white-space: nowrap;
+  font-size: 0.7em;
 }
 
 ul.primary li,
