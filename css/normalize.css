@@ -365,8 +365,10 @@ mark {
  */
 
 p {
-  margin: 0.3em;
-  text-indent: 2em;
+  margin-top: 0.3em;
+  margin-bottom: 0.4em;
+  margin-left: 0px;
+  margin-right: 0.2em;  
 }
 
 /*
