@@ -294,7 +294,6 @@ span.field-label { /* the inline field label used by the fences module */
  */
 
 .region-sidebar-first .view-content {
-    font-size: 13px;
     font-size: 0.8em;
 }
 
@@ -337,3 +336,7 @@ footer div.block{
 
 .region-bottom { /* wrapper for any blocks placed in the page bottom region */
 }
+
+div.field-name-body {
+  text-indent: 2em;
+  }
