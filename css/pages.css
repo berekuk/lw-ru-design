@@ -190,11 +190,6 @@ h3.title { /* comment title */
   margin: 0;
 }
 
-#content ul{
-    margin: 0;
-    padding: 0;
-}
-
 h2{
     font-weight: normal;
     font-size: 1.3em;
@@ -208,6 +203,11 @@ div.main-page-sequence-name-title h4{
     font-size: 1.3em;
     margin-bottom: 10px;
     color: #999;
+}
+
+div.main-page-sequence-content-list ul{
+    margin: 0;
+    padding: 0;
 }
 
 tr.even { /* some tables have rows marked even or odd. */
