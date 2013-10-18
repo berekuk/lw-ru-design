@@ -104,7 +104,6 @@ li a {
     font-weight: normal !important;
     color: #999;
 }
-
 #site-name a:link,
 #site-name a:visited {
   color: #000;
@@ -147,8 +146,6 @@ right: 0.75em;
   clear: both; /* clear the logo */
 }
 
-
-
 /*
  * main (container for everything else)
  */
@@ -162,8 +159,6 @@ right: 0.75em;
 
 #content {
 }
-
-
 
 .region-highlighted {
 }
@@ -337,6 +332,17 @@ footer div.block{
 .region-bottom { /* wrapper for any blocks placed in the page bottom region */
 }
 
-div.field-name-body {
+div.field-name-body p {
   text-indent: 2em;
   }
+  
+div.field-name-field-author {
+  max-width: 100%;
+  float: right;
+  }  
+  
+div.field-name-field-translators
+{
+  max-width: 100%;
+  float: right;
+  }  
