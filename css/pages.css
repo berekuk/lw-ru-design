@@ -338,7 +338,7 @@ div.field-name-body p {
   
 div.field-name-field-author {
   max-width: 100%;
-  float: right;
+  text-align: right;
   }  
   
 div.field-name-field-translators
